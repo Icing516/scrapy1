@@ -15,7 +15,6 @@ class WeatherPipeline(object):
         today = time.strftime('%Y%m%d',time.localtime())
         fileName = today + '.txt'
         with open(fileName,'a') as fp:
-            fp.write(('icing').encode('utf8'))
             fp.write(item['cityDate'].encode('utf8') + '\t')
             fp.write(item['week'].encode('utf8') + '\t')
             imgName = os.path.basename(item['img'])
