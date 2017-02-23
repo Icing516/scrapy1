@@ -15,6 +15,8 @@ SPIDER_MODULES = ['todayMoive.spiders']
 NEWSPIDER_MODULE = 'todayMoive.spiders'
 
 
+USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'todayMoive (+http://www.yourdomain.com)'
 
