@@ -14,6 +14,13 @@ BOT_NAME = 'weather'
 SPIDER_MODULES = ['weather.spiders']
 NEWSPIDER_MODULE = 'weather.spiders'
 
+USER_AGENT ='Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
+
+ITEM_PIPELINES = {
+'weather.pipelines.WeatherPipeline':1,
+# 'weather.pipelines2json.WeatherPipeline':2,
+# 'weather.pipelines2mysql.WeatherPipeline':3
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'weather (+http://www.yourdomain.com)'
