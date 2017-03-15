@@ -18,7 +18,7 @@ USER_AGENT ='Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
 
 ITEM_PIPELINES = {
 'weather.pipelines.WeatherPipeline':1,
-# 'weather.pipelines2json.WeatherPipeline':2,
+'weather.pipelines2json.WeatherPipeline':2,
 # 'weather.pipelines2mysql.WeatherPipeline':3
 }
 

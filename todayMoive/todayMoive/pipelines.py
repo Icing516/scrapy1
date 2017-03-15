@@ -9,12 +9,10 @@ import time
 
 #定义爬取的内容最终怎么处理
 class TodaymoivePipeline(object):
-    def process_item(self, items, spider):
-        # now = time.strftime('%Y-%m-%d', time.localtime())
+    def process_item(self, item, spider):
+        now = time.strftime('%Y-%m-%d', time.localtime())
         # fileName = 'wuHan' + now + '.txt'
-        fileName = './todayMoive.txt'
-        with open(self.fileName, 'w') as fp:
-            for item in items:
-                item = str(item['filmName'])
-                fp.write(item + '\n')
+        fileName = 'todayMoive.txt'
+        with open(fileName,'a') as fp:
+            fp.write(item['moiveName'].encode('utf8') + '\n')
         return item
