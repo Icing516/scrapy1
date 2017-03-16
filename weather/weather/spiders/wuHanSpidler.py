@@ -13,7 +13,7 @@ class wuHanSpidler(scrapy.Spider):
 
     def parse(self, response):
         subSelecter = response.xpath('//div[@class="tqshow1"]')
-        print subSelecter
+        # print subSelecter
         items = []
         for sub in subSelecter:
             item = WeatherItem()
